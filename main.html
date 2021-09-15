@@ -34,9 +34,9 @@
         <section class="section">
           <div class="container">
             <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>さぁゲームを始めよう！</h2>
-            <p class="text-center">まずは、この学校の家庭科室の鍵のありかを知らなければ入ることができない。<br>
-              下の画像の謎を解き、鍵のありかをキーワード欄に入力しよう。</p>
-            <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
+            <p class="text-center">妻の日記に書いてあった不思議な文字や絵。<br>
+              PCのパスワードを表しているようだけど、これは一体...?</p>
+          <!--   <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p> -->
   
             <div class="container">
               <figure class="image__container">
@@ -59,7 +59,7 @@ Youtube貼り付けここまで -->
         <!-- STAGE1解答入力セクション　ここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>キーワードを入力</h2>
+            <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>パスワードを入力</h2>
             <!------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。入力欄・送信ボタン・エラーメッセージを表示します。
               v-bind:correct="correctAnswer['stage1']['q1']" は正解の解答を指します。
@@ -85,9 +85,8 @@ Youtube貼り付けここまで -->
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：１  クリア！</div>
-              <div class="clear-message__content">家庭科室の扉が開いた！<br>
-                さぁ先生を助けるため<br>
-                ３つステージの謎をとき、暗号を見つけ出そう！</div>
+              <div class="clear-message__content">PCのパスワードを解読に成功！<br>
+                興味本位でPC内のファイルを調べてみることにした。</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -106,10 +105,9 @@ Youtube貼り付けここまで -->
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>黒板に書かれている謎を解け！</h2>
-              <p class="text-center">家庭科室に入ることができた！<br>
-                すぐに目に入ったのは黒板にある４つの謎。<br>
-                これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>この画像の意味とは...</h2>
+              <p class="text-center">PC内を捜索するとこんな画像が...<br>
+                これはどういう意味なんだろう...？<br>           
             </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
@@ -130,7 +128,7 @@ Youtube貼り付けここまで -->
                 <div class="column">
                   <!-- STAGE2-1問題セクション　ここから -->
                   <figure class="image__container">
-                    <img src="assets/images/stage.png" alt="">
+                    <img src="assets/images/nazo2.png" alt="">
                   </figure>
                   <!-- STAGE2-1問題セクション　ここまで -->
                   <!-- STAGE2-1解答入力セクション　ここから -->
@@ -181,7 +179,10 @@ Youtube貼り付けここまで -->
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：2　クリア！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
+              <div class="clear-message__content">謎を解いた僕はその”答え”に驚きを隠せなかった。<br>
+「四条四郎?!」四条四郎とは自分の上司でもある警視長なのだ。<br>
+「まさか警視長が妻を殺した犯人だったなんて...許せない...」<br>
+僕は驚きつつも復讐を心に誓い、妻の仇をうつために動き始めた。<br>
                 次のステージの謎を解こう！</div>
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
@@ -197,12 +198,11 @@ Youtube貼り付けここまで -->
         <!-- STAGE3-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>家庭科室の課題とは</h2>
-            <p class="text-center">黒板から得たメッセージは、「食物の廃棄問題」だった。<br>
-              どうやら、廃棄にかかる費用がかかりすぎて小学校の運営が厳しくなったようだ。。<br>
-              これらを解決するための最後の謎を解いていこう！</p>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>開かずの扉</h2>
+            <p class="text-center">犯人が四条四郎とわかったので、警察庁に捜索に来たが...<br>
+              重要資料倉庫の扉が開かない...</p>
             <figure class="image__container">
-              <img src="assets/images/stage.png" alt="">
+              <img src="assets/images/nazo3.png" alt="">
             </figure>
           </div>
         </section>
